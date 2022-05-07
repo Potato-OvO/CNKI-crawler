@@ -1,7 +1,7 @@
 # Crawling-knowledge-network-vanadium-titanium-paper-data
 ## 爬取知网钒钛论文数据：
 
-### 2、技术栈：requests库，selenium库，ORM操作数据库，TF-IDF，jieba , 随机森林
+### 2、技术栈：requests库，selenium库，ORM操作数据库
 
 ### 3、主要功能（介绍网络爬虫）：搜索需要爬取的论文数据的关键字，并根据实际情况输入爬取的页数,下载文.pdf文件的格式
 ### 4、功能简述：  
