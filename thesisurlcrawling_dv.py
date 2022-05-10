@@ -88,7 +88,7 @@ def getUrl(a_list):
             dbname = parameter[1]
             dbcode = parameter[2]
             url = "https://kns.cnki.net/kcms/detail/detail.aspx?" + "dbcode=" + dbcode + "&dbname=" + dbname + "&filename=" + filename;
-            print(url)
+            print("url地址是:", url)
             url_list.append(url)
         except:
             print(parameters)
@@ -99,7 +99,7 @@ def saveUrl():
     钒钛url地址的保存
     :return:
     """
-    with open("url地址.csv", "a", encoding="utf-8", newline="") as f:
+    with open("url地址1.csv", "a", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=["url地址地址"])
         writer.writeheader()
         for i in range(len(url_list)):
@@ -117,7 +117,7 @@ def vanadiumTitaniumDownload():
 
 
 def readCsvList():
-    with open('钒钛url地址.csv', 'r', encoding='gbk') as f:
+    with open('url地址1.csv', 'r', encoding='gbk') as f:
         reader = csv.reader(f)
         items = [item for item in reader]
         items = list(items)
@@ -132,4 +132,6 @@ if __name__ == '__main__':
     Parsed_pages(subject_name, num)
     print("完整的url列表为:", url_list)
     saveUrl()
-    # readCsvList()
+    readCsvList()
+
+
