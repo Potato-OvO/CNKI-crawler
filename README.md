@@ -62,7 +62,9 @@ path: 'xxxxx'
 ### 方式一:
 在终端使用`run.bat`（windows）或`run.sh`（Linux, Mac）脚本进行自动安装，或者使用以下命令手动安装。
 
-### 方式一:
+### 方式二:
+
+在终端输入以下命令
 ```python
 python cnki.py
 ```
