@@ -60,21 +60,21 @@ def Parsed_pages(subject_name, num):
                     author = data.css(" td.author a::text").getall()
                 else:
                     author = data.css(" td.author::text").get().strip()
-                
+
                 try:
-                    source = data.css(' td.source > a::text').get().strip()
+                    source = data.css(" td.source > a::text").get().strip()
                 except:
                     pass
-                date = data.css(' td.date::text').get().strip()
-                quote = data.css(' td.name::text').get().strip()
+                date = data.css(" td.date::text").get().strip()
+                quote = data.css(" td.name::text").get().strip()
                 if not quote:
                     quote = 0
                 if data.css(" td.download a::text"):
-                    download = data.css(' td.download a::text').get().strip()
+                    download = data.css(" td.download a::text").get().strip()
                 else:
                     download = 0
                 print(title, author, source, date, quote, download)
-            search = selector.css('#sqlVal').css('::attr(value)').get()
+            search = selector.css("#sqlVal").css("::attr(value)").get()
             SearchSql.append(search)
         else:
             data = {
@@ -116,17 +116,17 @@ def Parsed_pages(subject_name, num):
                     author = data.css(" td.author a::text").getall()
                 else:
                     author = data.css(" td.author::text").get().strip()
-                
+
                 try:
-                    source = data.css(' td.source > a::text').get().strip()
+                    source = data.css(" td.source > a::text").get().strip()
                 except:
                     pass
-                date = data.css(' td.date::text').get().strip()
-                quote = data.css(' td.name::text').get().strip()
+                date = data.css(" td.date::text").get().strip()
+                quote = data.css(" td.name::text").get().strip()
                 if not quote:
                     quote = 0
                 if data.css(" td.download a::text"):
-                    download = data.css(' td.download a::text').get().strip()
+                    download = data.css(" td.download a::text").get().strip()
                 else:
                     download = 0
                 print(title, author, source, date, quote, download)
